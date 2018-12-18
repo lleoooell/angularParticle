@@ -1,0 +1,25 @@
+<h1>hello Home</h1>
+
+<h1>Particle Test</h1>
+		
+		<form name="myForm">
+			<label>
+				<input type="radio" ng-model="ordre.valeur" value="on">
+				Allumer la lumière
+			</label><br/>
+			<label>
+				<input type="radio" ng-model="ordre.valeur" value="off">
+				Éteindre la lumière
+			</label><br/>
+		</form>
+		<!-- <form action="https://api.particle.io/v1/devices/270032000947363339343638/led?access_token=bbf415bd43ef4cf3bb24b91c2897477aafd690e3" method="POST">
+			Tell your device what to do!<br>
+			<br>
+			<input type="radio" name="arg" value="on">Turn the LED on.
+			<br>
+			<input type="radio" name="arg" value="off">Turn the LED off.
+			<br>
+			<br>
+			<input type="submit" value="Do it!">
+		</form> -->
+		<button ng-click="myFunc()">button</button>

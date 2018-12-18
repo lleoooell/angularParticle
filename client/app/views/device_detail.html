@@ -1,0 +1,32 @@
+<a href="#!/devices">retour</a>
+<h1>name : {{monDevice.name}}</h1>
+<h2>id : {{monDevice.id}}</h2>
+<!-- <p>{{monDevice}}</p> -->
+<hr>
+<canvas class="chart chart-line" chart-data="data" chart-labels="labels" 
+	chart-series="series" chart-click="onClick"></canvas> 
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">data</th>
+      <th scope="col">published_at</th>
+      <th scope="col">coreid</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="s in mesSensors">
+      <th scope="row">{{$index}}</th>
+      <td>{{s.name}}</td>
+      <td>{{s.data}}</td>
+      <td>{{s.published_at| date : 'dd-MM-yy HH:mm:ss ' }}</td>
+      <td>{{s.coreid}}</td>
+      
+      
+    </tr>
+    
+  </tbody>
+</table>

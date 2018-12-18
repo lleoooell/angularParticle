@@ -1,0 +1,21 @@
+<h1>hello devices</h1>
+
+
+<div class="containerP row">
+	<div ng-repeat="d in listeDevices" class="card" style="width: 25vw;">
+  <div class="card-body">
+    <h5 class="card-title">{{d.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{d.id}}</h6>
+    <p class="card-text">
+    	<span>last heard : {{d.last_heard | date}}</span><br>
+    	<span>last IF : {{d.last_ip_address}}</span><br>
+    	<span>serial : {{d.serial_number}}</span>
+    </p>
+    <a ng-href="#!/devices/{{d._id}}" class="card-link">view details</a>
+  </div>
+</div>
+</div>
+
+<pre>
+	{{listeDevices | json}}
+</pre>

@@ -1,0 +1,25 @@
+{
+  "name": "angtest",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Leo Casagrande <leo@greenberry.io>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./client/lib/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.7.5",
+    "angular-resource": "^1.7.5",
+    "angular": "angularjs#1.7.5",
+    "socket.io-client": "^2.2.0",
+    "angular-chart.js": "^1.1.1"
+  }
+}
