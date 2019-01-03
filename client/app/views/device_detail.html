@@ -2,11 +2,18 @@
 <h1>name : {{monDevice.name}}</h1>
 <h2>id : {{monDevice.id}}</h2>
 <!-- <p>{{monDevice}}</p> -->
-<hr>
-<canvas class="chart chart-line" chart-data="data" chart-labels="labels" 
-	chart-series="series" chart-click="onClick"></canvas> 
-<hr>
-<table class="table">
+
+<div class="row">
+  <div class="col-md-6">
+     <canvas  class="chart chart-line" chart-data="data" chart-labels="labels" chart-click="onClick" chart-options="options"></canvas> 
+  </div>
+  <div class="col-md-6">
+  <leaflet width="95%" markers="markers"  lf-center="london" height="380px"></leaflet>
+    
+  </div>
+</div>
+<div class="row">
+  <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -30,3 +37,10 @@
     
   </tbody>
 </table>
+
+</div>
+
+
+ 
+
+<hr>
